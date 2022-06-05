@@ -1,0 +1,286 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: 323232;
+    font-family: Helvetica, sans-serif;
+    border: none;
+}
+
+input, label{
+    display: block;
+    width: 100%;
+}
+
+input :focus, label :focus{
+    outline: none;
+}
+
+form input[type=text]:focus{
+    outline: 0;
+}
+
+form input[type=password]:focus{
+    outline: 0;
+}
+
+form input[type=email]:focus{
+    outline: 0;
+}
+a{
+    color: #c29519;
+}
+
+body{
+    background-color: #DFCDBD;
+}
+
+
+#conteiner{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#conteiner h1{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.space{
+    margin-right: 2.5%;
+}
+
+label{
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+.error {
+    display: none;
+    padding-top: 1px;
+    margin-bottom: 10px;
+    color: white;
+    background: red;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+input:focus{
+    border-color: palevioletred;
+}
+
+input[type="submit"]{
+    background-color: rgb(59, 8, 16);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement, #aceito{
+    display: inline-block;
+    width: auto;
+}
+
+.template{
+    display: none;
+
+}
+
+
+header {
+    display: flex;
+    display: grid;
+    width: 100%;
+    height: 80px;
+    background-color: #211D1D;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #211D1D;
+    margin-top: 400px;
+}
+
+.coracao{
+    height: 70px;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+
+nav{
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textF{
+    color: #B28E00;
+    margin-left: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: inline-block;
+}
+
+.flex{
+    display: flex;
+}
+
+.block{
+    display: block;
+}
+
+.icones1{
+    height: 50px;
+    margin-left: 70px;
+    margin-right: 50%;
+}
+
+.icones2{
+    height: 50px;
+    margin-left: -10px;
+    margin-right: 70%;
+}
+
+.icones3{
+    height: 50px;
+    margin-left: 60px;
+    margin-right: -10%;
+
+}
+
+.sociais1{
+    color: #FFF;
+    padding: 15px;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-size: large;
+    margin-left: 60%;
+    text-align:center;
+}
+
+.sociais2{
+    color: #FFF;
+    padding: 15px;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-size: large;
+    text-align:center;
+}
+
+.sociais3{
+    color: #FFF;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-size: large;
+    text-align:center;
+    margin-top: 14px;
+    margin-left: 80%;
+}
+
+
+.coracaoF{
+    height: 70px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+
+.texto{
+    display: block;
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    margin-right: 1100px;
+    margin-left: -56px;
+    margin-top: 55px;
+}
+
+.block1{
+    display: block;
+    margin-left: 180px;
+}
+
+/*Deixando a o site responsivo*/
+@media(max-width: 800px){
+
+
+
+header{
+    display: flex;
+    display: grid;
+    width: 100%;
+    height: 80px;
+    background-color: #211D1D;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#conteiner{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+footer{
+     display: flex;
+     width: 100%;
+     height: 300px;
+     background-color: #211D1D;
+     margin-top: 100px;
+}
+
+.texto{
+    display: block;
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    margin-right: -20px;
+    margin-left:  -1px;
+    margin-bottom: 50px;
+}
+}

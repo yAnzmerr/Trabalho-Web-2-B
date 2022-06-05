@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+    <!--CABEÇALHO-->
+    <header>
+        <nav>
+        <img src="coracao.png" class="coracao">
+        </nav>
+    </header>
+    <main>
+    <div id="conteiner">
+                     <h1>Cadastre-se para participar</h1>
+                    <form id="register-form">
+                        <div class="full-box space">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="Digite o seu E-mail*"
+                            onchange="onChangeEmail()" id="email"/>
+                            <div class="error" id="email-required-error">Email é obrigatório</div>
+                            <div class="error" id="email-invalid-error">Email é invalido</div>
+                        </div>
+                        <div class="half-box space">
+                            <label for="name">Nome</label>
+                            <input type="text" name="Name" placeholder="Digite o seu Nome*">
+                        </div>
+                        <div class="half-box space">
+                            <label for="lastname">sobrenome</label>
+                            <input type="text" name="lastname" placeholder="Digite o seu sobrenome*">
+                        </div>
+                        <div class="half-box space">
+                            <label for="password">Senha</label>
+                            <input type="password" name="password" id="password" onchange="onChangePassword()" placeholder="Digite a sua senha*"/>
+                            <div class="error" id="password-required-error">Senha é obrigatória</div>
+                            <div class="error" id="password-min-length-error">Senha deve ter pelo menos 6 caracteres</div>
+                        </div>
+                        <div class="half-box space">
+                            <label for="confirmpassword">Confirmação da Senha</label>
+                            <input type="password" name="confirmPassword" placeholder="Confirme a sua senha*" id="confirmPassword" onchange="onChangeConfirmPassword()"/>
+                            <div class="error" id="password-doesnt-match-error">Senha e confirmar senha devem ser igual</div>
+                        </div>
+                        <div class="half-box space">
+                            <label for="CEP">CEP</label>
+                            <input type="text" name="CEP" placeholder="12345-678*">
+                        </div>
+                        <div class="half-box space">
+                            <label for="Estado">Estado</label>
+                            <input type="text" name="Estado" placeholder="Estado*">
+                        </div>
+                        <div class="half-box space">
+                            <label for="Cidade">Cidade</label>
+                            <input type="text" name="Cidade" placeholder="Cidade*">
+                        </div>
+                        <div class="half-box space">
+                            <label for="Endereço">Endereço</label>
+                            <input type="text" name="Endereço" placeholder="Ex: Bairro, Av, rua, esquina...*">
+                        </div>
+                         <div class="full-box">
+                                 <input type="checkbox" name="agreement" id="agreement">
+                                 <label for="agreement" id="aceito">Li e aceito os <a href="#">termos de uso</a></label>
+                         </div>
+                        <div class="full-box">
+                                <input type="submit" id="btn-submit" value="registrar" disabled="false">
+                        </div>
+                    </form>
+                </div>
+    </main>
+ <!--RODAPES DO SITES-->
+     <footer>
+         <div class="flex">
+             <p class="textF">Quem somos:</p>
+                <div>
+                    <p class="texto">Safe Us é uma organização que busca ajudar e incentivar a auxiliar o próximo, criamos um site que ajuda a refugiados a encontrarem um lar temporário para que possam se estabilizar do momento difícil no qual eles se encontram. Criando um meio de se comunicar com uma pessoa que está disposta a ajudar esses indivíduos.</p>
+                </div>
+        <div class="block1">
+        <div class="flex">
+            <div>
+            <p class="sociais1">@Safe_Us</p>
+            </div>
+            <img src="insta.png" class="icones1">
+        </div>
+        <div class="flex">
+            <div>
+            <p class="sociais2">Safe_Us@gmail.com</p>
+            </div>
+            <img src="email.png" class="icones2">
+        </div>
+        <div class="flex">
+            <div>
+            <p class="sociais3" >(99)99999-9999</p>
+            </div>   
+            <img src="phone.png" class="icones3">
+        </div>
+        </div>
+     </footer>
+    <script src="validation.js"></script> 
+    <script src="scripts.js"></script>   
+</body>
+</html>
